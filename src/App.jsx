@@ -33,7 +33,7 @@ const TOOLS = [
     id:"startup-ops", emoji:"⚙️", tag:"Google Workspace",
     title:"Startup Ops Toolkit",
     desc:"Google Sheets templates and Apps Script automations for early-stage teams. Multi Mail Shooter, Document Generator, and more — copy, paste, run.",
-    stats:[{n:"2",l:"Live tools"},{n:"4+",l:"Coming soon"},{n:"0",l:"Cost"}],
+    stats:[{n:"3",l:"Live tools"},{n:"3+",l:"Coming soon"},{n:"0",l:"Cost"}],
     url:"https://nikhil-thomas-a.github.io/startup-ops-toolkit/",
     cta:"Open Ops Toolkit",
     colorKey:"green",
@@ -44,7 +44,7 @@ const TOOLS = [
     id:"pm-ai-hub", emoji:"🤖", tag:"AI Prompts",
     title:"PM AI Hub",
     desc:"13 ready-to-run AI prompts for Delivery PMs. Paste your data, get an exec-ready output, launch in Claude, ChatGPT or Gemini in one click.",
-    stats:[{n:"13",l:"Prompts"},{n:"3",l:"PM pain points"},{n:"∞",l:"Hours saved"}],
+    stats:[{n:"14",l:"Prompts"},{n:"3",l:"PM pain points"},{n:"∞",l:"Hours saved"}],
     url:"https://nikhil-thomas-a.github.io/pm-ai-hub/",
     cta:"Open PM AI Hub",
     colorKey:"red",
@@ -139,7 +139,7 @@ export default function Portfolio() {
       opacity:mounted?1:0, transition:"opacity 0.5s ease, background 0.3s",
     }}>
       <style>{[
-        `html,body,#root{background:`,T.bg,`!important;transition:background 0.3s;}`,
+        `html{scroll-behavior:smooth;} body,#root{background:`,T.bg,`!important;transition:background 0.3s;}`,
         `*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}`,
         `a{transition:opacity 0.2s;} a:hover{opacity:0.85;}`,
         `::-webkit-scrollbar{width:4px;background:`,T.bg,`;}`,
@@ -265,18 +265,20 @@ export default function Portfolio() {
           flexWrap:"wrap",gap:14,marginBottom:72,
         }}>
           <div>
-            <div style={{fontFamily:T.mono,fontSize:11,color:T.faint,letterSpacing:"0.1em",textTransform:"uppercase",marginBottom:8}}>
+            <div style={{fontFamily:T.mono,fontSize:11,color:T.muted,letterSpacing:"0.1em",textTransform:"uppercase",marginBottom:8}}>
               More in the pipeline
             </div>
             <div style={{display:"flex",flexWrap:"wrap",gap:8}}>
               {["Hiring Pipeline Tracker","Weekly KPI Emailer","Invoice Generator","Startup Dashboard"].map((t,i)=>(
-                <span key={i} style={{fontFamily:T.mono,fontSize:11,color:T.faint,background:T.card,border:`1px solid ${T.border}`,padding:"4px 12px",borderRadius:4}}>{t}</span>
+                <span key={i} style={{fontFamily:T.mono,fontSize:11,color:T.muted,background:T.surface,border:`1px solid ${T.border}`,padding:"4px 12px",borderRadius:4}}>{t}</span>
               ))}
             </div>
           </div>
           <a href="https://www.linkedin.com/in/nikhil-thomas-a-58538117a/"
             target="_blank" rel="noopener noreferrer"
-            style={{fontFamily:T.mono,fontSize:12,fontWeight:700,color:T.gold,textDecoration:"none",border:`1px solid ${T.goldBorder}`,padding:"10px 20px",borderRadius:8,letterSpacing:"0.06em",whiteSpace:"nowrap"}}>
+            style={{fontFamily:T.mono,fontSize:12,fontWeight:700,color:T.gold,textDecoration:"none",border:`1px solid ${T.goldBorder}`,padding:"10px 20px",borderRadius:8,letterSpacing:"0.06em",whiteSpace:"nowrap",transition:"background 0.2s"}}
+            onMouseEnter={e=>e.currentTarget.style.background=T.goldDim}
+            onMouseLeave={e=>e.currentTarget.style.background="transparent"}>
             Follow for updates →
           </a>
         </div>

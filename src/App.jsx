@@ -44,7 +44,7 @@ const TOOLS = [
     id:"pm-ai-hub", emoji:"🤖", tag:"AI Prompts",
     title:"PM AI Hub",
     desc:"13 ready-to-run AI prompts for Delivery PMs. Paste your data, get an exec-ready output, launch in Claude, ChatGPT or Gemini in one click.",
-    stats:[{n:"14",l:"Prompts"},{n:"3",l:"PM pain points"},{n:"∞",l:"Hours saved"}],
+    stats:[{n:"13",l:"Prompts"},{n:"3",l:"PM pain points"},{n:"∞",l:"Hours saved"}],
     url:"https://nikhil-thomas-a.github.io/pm-ai-hub/",
     cta:"Open PM AI Hub",
     colorKey:"red",

@@ -19,7 +19,7 @@ This site links to the tools I've built publicly.
 | Project | Description | Status |
 |---|---|---|
 | [⚙️ Startup Ops Toolkit](https://nikhil-thomas-a.github.io/startup-ops-toolkit/) | Google Sheets + Apps Script automations for early-stage teams | Live |
-| [🤖 PM AI Hub](https://nikhil-thomas-a.github.io/pm-ai-hub/) | 14 ready-to-run AI prompts for Delivery PMs | Live |
+| [🤖 PM AI Hub](https://nikhil-thomas-a.github.io/pm-ai-hub/) | 13 ready-to-run AI prompts for Delivery PMs | Live |
 
 ---
 

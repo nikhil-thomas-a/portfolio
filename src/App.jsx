@@ -33,7 +33,7 @@ const TOOLS = [
     id:"startup-ops", emoji:"⚙️", tag:"Google Workspace",
     title:"Startup Ops Toolkit",
     desc:"Google Sheets templates and Apps Script automations for early-stage teams. Multi Mail Shooter, Document Generator, and more — copy, paste, run.",
-    stats:[{n:"4",l:"Live tools"},{n:"2+",l:"Coming soon"},{n:"0",l:"Cost"}],
+    stats:[{n:"3",l:"Live tools"},{n:"2+",l:"Coming soon"},{n:"0",l:"Cost"}],
     url:"https://nikhil-thomas-a.github.io/startup-ops-toolkit/",
     cta:"Open Ops Toolkit",
     colorKey:"green",
@@ -336,6 +336,9 @@ export default function Portfolio() {
             <span style={{color:T.border}}>·</span>
             <a href="https://nikhil-thomas-a.github.io/pm-ai-hub/" target="_blank" rel="noopener noreferrer"
               style={{fontFamily:T.mono,fontSize:11,color:T.faint,textDecoration:"none",letterSpacing:"0.06em"}}>PM AI Hub</a>
+            <span style={{color:T.border}}>·</span>
+            <a href="https://nikhil-thomas-a.github.io/tensaku-web/" target="_blank" rel="noopener noreferrer"
+              style={{fontFamily:T.mono,fontSize:11,color:T.faint,textDecoration:"none",letterSpacing:"0.06em"}}>Tensaku</a>
           </div>
         </div>
 

@@ -338,7 +338,7 @@ export default function Portfolio() {
               style={{fontFamily:T.mono,fontSize:11,color:T.faint,textDecoration:"none",letterSpacing:"0.06em"}}>PM AI Hub</a>
             <span style={{color:T.border}}>·</span>
             <a href="https://nikhil-thomas-a.github.io/tensaku-web/" target="_blank" rel="noopener noreferrer"
-              style={{fontFamily:T.mono,fontSize:11,color:T.faint,textDecoration:"none",letterSpacing:"0.06em"}}>Tensaku</a>
+              style={{fontFamily:T.mono,fontSize:11,color:T.faint,textDecoration:"none",letterSpacing:"0.06em"}}>Tensaku 添削</a>
           </div>
         </div>
 

@@ -8,7 +8,7 @@ const DARK = {
   bg:"#0F0E0C", surface:"#1A1814", card:"#201E1A",
   border:"#2E2B26", borderHi:"#4A4540",
   gold:"#C9A84C", goldDim:"rgba(201,168,76,0.12)", goldBorder:"rgba(201,168,76,0.25)",
-  red:"#E5484D", green:"#2EAB68",
+  red:"#E5484D", green:"#2EAB68", gold:"#C9A84C",
   text:"#F0EBE3", muted:"#8A8278", faint:"#3A3530",
   ctaBg:"#C9A84C", ctaText:"#0F0E0C",
   crossBg:"#1C1810", crossText:"#C8C0B0", crossLabel:"#7A6A5A",
@@ -19,7 +19,7 @@ const LIGHT = {
   bg:"#F7F4EE", surface:"#EDEAE2", card:"#FFFFFF",
   border:"#DDD6C4", borderHi:"#B0A898",
   gold:"#9A6E1A", goldDim:"rgba(154,110,26,0.08)", goldBorder:"rgba(154,110,26,0.2)",
-  red:"#C8282B", green:"#166038",
+  red:"#C8282B", green:"#166038", gold:"#9A6E1A",
   text:"#1C1810", muted:"#6A6258", faint:"#C0BAB0",
   ctaBg:"#9A6E1A", ctaText:"#FFFFFF",
   crossBg:"#1C1810", crossText:"#C8C0B0", crossLabel:"#7A6A5A",
@@ -33,7 +33,7 @@ const TOOLS = [
     id:"startup-ops", emoji:"⚙️", tag:"Google Workspace",
     title:"Startup Ops Toolkit",
     desc:"Google Sheets templates and Apps Script automations for early-stage teams. Multi Mail Shooter, Document Generator, and more — copy, paste, run.",
-    stats:[{n:"3",l:"Live tools"},{n:"3+",l:"Coming soon"},{n:"0",l:"Cost"}],
+    stats:[{n:"4",l:"Live tools"},{n:"2+",l:"Coming soon"},{n:"0",l:"Cost"}],
     url:"https://nikhil-thomas-a.github.io/startup-ops-toolkit/",
     cta:"Open Ops Toolkit",
     colorKey:"green",
@@ -43,13 +43,24 @@ const TOOLS = [
   {
     id:"pm-ai-hub", emoji:"🤖", tag:"AI Prompts",
     title:"PM AI Hub",
-    desc:"13 ready-to-run AI prompts for Delivery PMs. Paste your data, get an exec-ready output, launch in Claude, ChatGPT or Gemini in one click.",
-    stats:[{n:"13",l:"Prompts"},{n:"3",l:"PM pain points"},{n:"∞",l:"Hours saved"}],
+    desc:"14 ready-to-run AI prompts for Delivery PMs. Paste your data, get an exec-ready output, launch in Claude, ChatGPT or Gemini in one click.",
+    stats:[{n:"14",l:"Prompts"},{n:"3",l:"PM pain points"},{n:"∞",l:"Hours saved"}],
     url:"https://nikhil-thomas-a.github.io/pm-ai-hub/",
     cta:"Open PM AI Hub",
     colorKey:"red",
     dimD:"rgba(229,72,77,0.1)", dimL:"rgba(200,40,43,0.07)",
     borD:"rgba(229,72,77,0.25)", borL:"rgba(200,40,43,0.18)",
+  },
+  {
+    id:"tensaku", emoji:"✦", tag:"AI Writing Tools",
+    title:"Tensaku 添削",
+    desc:"Free AI writing toolkit — grammar check, enhance, paraphrase, summarise, translate and more. Runs on Groq's free tier, no account needed, nothing stored server-side.",
+    stats:[{n:"13",l:"Writing tools"},{n:"Free",l:"No account"},{n:"0",l:"Cost"}],
+    url:"https://nikhil-thomas-a.github.io/tensaku-web/",
+    cta:"Open Tensaku",
+    colorKey:"gold",
+    dimD:"rgba(201,168,76,0.1)", dimL:"rgba(154,110,26,0.07)",
+    borD:"rgba(201,168,76,0.25)", borL:"rgba(154,110,26,0.18)",
   },
 ];
 
@@ -269,7 +280,7 @@ export default function Portfolio() {
               More in the pipeline
             </div>
             <div style={{display:"flex",flexWrap:"wrap",gap:8}}>
-              {["Hiring Pipeline Tracker","Weekly KPI Emailer","Invoice Generator","Startup Dashboard"].map((t,i)=>(
+              {["Hiring Pipeline Tracker","Invoice Generator","Startup Dashboard","Data Portfolio"].map((t,i)=>(
                 <span key={i} style={{fontFamily:T.mono,fontSize:11,color:T.muted,background:T.surface,border:`1px solid ${T.border}`,padding:"4px 12px",borderRadius:4}}>{t}</span>
               ))}
             </div>

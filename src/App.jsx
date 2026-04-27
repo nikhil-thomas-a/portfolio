@@ -412,22 +412,61 @@ export default function Portfolio() {
         </div>
 
         {/* FOOTER */}
-        <div style={{borderTop:`1px solid ${T.border}`,paddingTop:24,display:"flex",justifyContent:"space-between",alignItems:"center",flexWrap:"wrap",gap:12}}>
-          <span style={{fontFamily:T.serif,fontSize:16,fontWeight:700,color:T.text}}>Nikhil Thomas A</span>
-          <div style={{display:"flex",gap:16,alignItems:"center",flexWrap:"wrap"}}>
-            {[
-              {label:"Startup Ops Toolkit", href:"https://nikhil-thomas-a.github.io/startup-ops-toolkit/"},
-              {label:"PM AI Hub", href:"https://nikhil-thomas-a.github.io/pm-ai-hub/"},
-              {label:"Tensaku 添削", href:"https://nikhil-thomas-a.github.io/tensaku-web/"},
-              {label:"Hip Hoop", href:"https://nikhil-thomas-a.github.io/hip-hoop/"},
-            ].map((l,i,arr)=>(
-              <span key={l.label} style={{display:"flex",alignItems:"center",gap:16}}>
-                <a href={l.href} target="_blank" rel="noopener noreferrer"
-                  style={{fontFamily:T.mono,fontSize:11,color:T.faint,textDecoration:"none",letterSpacing:"0.06em"}}>{l.label}</a>
-                {i < arr.length-1 && <span style={{color:T.border}}>·</span>}
-              </span>
-            ))}
+        <div style={{borderTop:`1px solid ${T.border}`,paddingTop:48}}>
+
+          {/* Three-column top */}
+          <div style={{display:"flex",gap:"48px 64px",flexWrap:"wrap",marginBottom:40}}>
+
+            {/* Identity */}
+            <div style={{flex:"1 1 160px",minWidth:140}}>
+              <div style={{fontFamily:T.serif,fontSize:20,fontWeight:900,color:T.text,marginBottom:6}}>Nikhil Thomas A</div>
+              <div style={{fontFamily:T.sans,fontSize:13,color:T.muted,lineHeight:1.7}}>
+                Delivery PM<br/>Fractional Head of Data
+              </div>
+            </div>
+
+            {/* Projects */}
+            <div style={{flex:"1 1 160px",minWidth:140}}>
+              <div style={{fontFamily:T.mono,fontSize:10,fontWeight:700,color:T.gold,letterSpacing:"0.14em",textTransform:"uppercase",marginBottom:14}}>Work</div>
+              {[
+                {label:"SoleSearch",       href:"https://solesearch-one.vercel.app/"},
+                {label:"Apply Radar",      href:"https://github.com/nikhil-thomas-a/apply-radar"},
+                {label:"Tensaku 添削",      href:"https://nikhil-thomas-a.github.io/tensaku-web/"},
+                {label:"Startup Ops Toolkit", href:"https://nikhil-thomas-a.github.io/startup-ops-toolkit/"},
+                {label:"PM AI Hub",        href:"https://nikhil-thomas-a.github.io/pm-ai-hub/"},
+                {label:"Hip Hoop",         href:"https://nikhil-thomas-a.github.io/hip-hoop/"},
+              ].map(l=>(
+                <a key={l.label} href={l.href} target="_blank" rel="noopener noreferrer"
+                  style={{display:"block",fontFamily:T.mono,fontSize:12,color:T.muted,textDecoration:"none",marginBottom:9,letterSpacing:"0.02em",transition:"color 0.15s"}}
+                  onMouseEnter={e=>e.currentTarget.style.color=T.text}
+                  onMouseLeave={e=>e.currentTarget.style.color=T.muted}
+                >{l.label}</a>
+              ))}
+            </div>
+
+            {/* Connect */}
+            <div style={{flex:"1 1 100px",minWidth:100}}>
+              <div style={{fontFamily:T.mono,fontSize:10,fontWeight:700,color:T.gold,letterSpacing:"0.14em",textTransform:"uppercase",marginBottom:14}}>Connect</div>
+              {[
+                {label:"LinkedIn", href:"https://www.linkedin.com/in/nikhil-thomas-a-58538117a/"},
+                {label:"GitHub",   href:"https://github.com/nikhil-thomas-a"},
+              ].map(l=>(
+                <a key={l.label} href={l.href} target="_blank" rel="noopener noreferrer"
+                  style={{display:"block",fontFamily:T.mono,fontSize:12,color:T.muted,textDecoration:"none",marginBottom:9,letterSpacing:"0.02em",transition:"color 0.15s"}}
+                  onMouseEnter={e=>e.currentTarget.style.color=T.text}
+                  onMouseLeave={e=>e.currentTarget.style.color=T.muted}
+                >{l.label}</a>
+              ))}
+            </div>
+
           </div>
+
+          {/* Bottom bar */}
+          <div style={{borderTop:`1px solid ${T.border}`,paddingTop:16,display:"flex",justifyContent:"space-between",alignItems:"center",flexWrap:"wrap",gap:8}}>
+            <span style={{fontFamily:T.mono,fontSize:11,color:T.faint,letterSpacing:"0.06em"}}>© 2026 Nikhil Thomas A</span>
+            <span style={{fontFamily:T.mono,fontSize:11,color:T.faint,letterSpacing:"0.06em"}}>Built with React & Vite</span>
+          </div>
+
         </div>
 
       </div>

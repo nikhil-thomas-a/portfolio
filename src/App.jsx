@@ -25,8 +25,20 @@ const LIGHT = {
   isDark:false,
 };
 
-// ── TOOLS — Apply Radar first, then Startup Ops, Tensaku, PM AI Hub ──
+// ── TOOLS — SoleSearch, Apply Radar, Tensaku, Startup Ops, PM AI Hub ──
 const TOOLS = [
+  {
+    id:"solesearch", emoji:"👟", tag:"Shoe Discovery",
+    title:"SoleSearch",
+    desc:"Find your perfect shoe match. 9 biomechanics signals scored across 67 shoes in 14 categories — quiz, catalogue, and compare. Built with Next.js + TypeScript.",
+    stats:[{n:"67",l:"Shoes"},{n:"9",l:"Fit signals"},{n:"14",l:"Categories"}],
+    url:"https://solesearch-one.vercel.app/",
+    cta:"Try it live",
+    colorKey:"green",
+    dimD:"rgba(46,171,104,0.1)", dimL:"rgba(22,96,56,0.07)",
+    borD:"rgba(46,171,104,0.25)", borL:"rgba(22,96,56,0.18)",
+    githubUrl:"https://github.com/nikhil-thomas-a/solesearch",
+  },
   {
     id:"apply-radar", emoji:"🎯", tag:"Chrome Extension",
     title:"Apply Radar",
@@ -39,17 +51,6 @@ const TOOLS = [
     borD:"rgba(229,72,77,0.25)", borL:"rgba(200,40,43,0.18)",
   },
   {
-    id:"startup-ops", emoji:"⚙️", tag:"Google Workspace",
-    title:"Startup Ops Toolkit",
-    desc:"Google Sheets templates and Apps Script automations for early-stage teams. Multi Mail Shooter, Document Generator, and more — copy, paste, run.",
-    stats:[{n:"3",l:"Live tools"},{n:"2+",l:"Coming soon"},{n:"0",l:"Cost"}],
-    url:"https://nikhil-thomas-a.github.io/startup-ops-toolkit/",
-    cta:"Open Ops Toolkit",
-    colorKey:"green",
-    dimD:"rgba(46,171,104,0.1)", dimL:"rgba(22,96,56,0.07)",
-    borD:"rgba(46,171,104,0.25)", borL:"rgba(22,96,56,0.18)",
-  },
-  {
     id:"tensaku", emoji:"✦", tag:"AI Writing Tools",
     title:"Tensaku 添削",
     desc:"Free AI writing toolkit — grammar check, enhance, paraphrase, summarise, translate and more. Runs on Groq's free tier, no account needed, nothing stored server-side.",
@@ -59,6 +60,17 @@ const TOOLS = [
     colorKey:"gold",
     dimD:"rgba(201,168,76,0.1)", dimL:"rgba(154,110,26,0.07)",
     borD:"rgba(201,168,76,0.25)", borL:"rgba(154,110,26,0.18)",
+  },
+  {
+    id:"startup-ops", emoji:"⚙️", tag:"Google Workspace",
+    title:"Startup Ops Toolkit",
+    desc:"Google Sheets templates and Apps Script automations for early-stage teams. Multi Mail Shooter, Document Generator, and more — copy, paste, run.",
+    stats:[{n:"3",l:"Live tools"},{n:"2+",l:"Coming soon"},{n:"0",l:"Cost"}],
+    url:"https://nikhil-thomas-a.github.io/startup-ops-toolkit/",
+    cta:"Open Ops Toolkit",
+    colorKey:"green",
+    dimD:"rgba(46,171,104,0.1)", dimL:"rgba(22,96,56,0.07)",
+    borD:"rgba(46,171,104,0.25)", borL:"rgba(22,96,56,0.18)",
   },
   {
     id:"pm-ai-hub", emoji:"🤖", tag:"AI Prompts",
@@ -86,6 +98,18 @@ const DATA_PROJECTS = [
     colorKey:"gold",
     dimD:"rgba(201,168,76,0.1)", dimL:"rgba(154,110,26,0.07)",
     borD:"rgba(201,168,76,0.25)", borL:"rgba(154,110,26,0.18)",
+  },
+  {
+    id:"data-portfolio", emoji:"📊", tag:"Data Analytics",
+    title:"PM Data Portfolio",
+    desc:"Three end-to-end analytics projects applied to PM and ops problems — Sprint Velocity Analyser, Startup KPI Dashboard, and a Delivery Risk Predictor built with scikit-learn.",
+    stats:[{n:"3",l:"Projects"},{n:"Python",l:"Stack"},{n:"PM",l:"Use case"}],
+    url:"https://github.com/nikhil-thomas-a/data-portfolio",
+    cta:"View on GitHub",
+    colorKey:"red",
+    dimD:"rgba(229,72,77,0.1)", dimL:"rgba(200,40,43,0.07)",
+    borD:"rgba(229,72,77,0.25)", borL:"rgba(200,40,43,0.18)",
+    githubUrl:"https://github.com/nikhil-thomas-a/data-portfolio",
   },
   {
     id:"ai-training-playbook", emoji:"📖", tag:"Reference Guide",

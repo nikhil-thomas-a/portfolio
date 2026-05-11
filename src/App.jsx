@@ -25,11 +25,11 @@ const LIGHT = {
   isDark:false,
 };
 
-// ── TOOLS — SoleSearch, Apply Radar, Tensaku, Startup Ops, PM AI Hub ──
+// ── TOOLS — SoleHunt, Apply Radar, Tensaku, Startup Ops, PM AI Hub ──
 const TOOLS = [
   {
-    id:"solesearch", emoji:"👟", tag:"Shoe Discovery",
-    title:"SoleSearch",
+    id:"solehunt", emoji:"👟", tag:"Shoe Discovery",
+    title:"SoleHunt",
     desc:"Find your perfect shoe match. 9 biomechanics signals scored across 67 shoes in 14 categories — quiz, catalogue, and compare. Built with Next.js + TypeScript.",
     stats:[{n:"67",l:"Shoes"},{n:"9",l:"Fit signals"},{n:"14",l:"Categories"}],
     url:"https://solesearch-one.vercel.app/",
@@ -429,7 +429,7 @@ export default function Portfolio() {
             <div style={{flex:"1 1 160px",minWidth:140}}>
               <div style={{fontFamily:T.mono,fontSize:10,fontWeight:700,color:T.gold,letterSpacing:"0.14em",textTransform:"uppercase",marginBottom:14}}>Work</div>
               {[
-                {label:"SoleSearch",       href:"https://solesearch-one.vercel.app/"},
+                {label:"SoleHunt",         href:"https://solesearch-one.vercel.app/"},
                 {label:"Apply Radar",      href:"https://github.com/nikhil-thomas-a/apply-radar"},
                 {label:"Tensaku 添削",      href:"https://nikhil-thomas-a.github.io/tensaku-web/"},
                 {label:"Startup Ops Toolkit", href:"https://nikhil-thomas-a.github.io/startup-ops-toolkit/"},

@@ -18,7 +18,7 @@ I build practical tools for delivery, ops, and data problems — things that act
 
 | Project | Description | Link |
 |---------|-------------|------|
-| [👟 SoleSearch](https://solesearch-one.vercel.app/) | Data-driven shoe discovery — 9-signal biomechanics fit engine across 67 shoes | [Live ↗](https://solesearch-one.vercel.app/) |
+| [👟 SoleHunt](https://solesearch-one.vercel.app/) | Data-driven shoe discovery — 9-signal biomechanics fit engine across 67 shoes | [Live ↗](https://solesearch-one.vercel.app/) |
 | [🎯 Apply Radar](https://github.com/nikhil-thomas-a/apply-radar) | Chrome extension to track job applications across Naukri, LinkedIn, and Internshala | [GitHub ↗](https://github.com/nikhil-thomas-a/apply-radar) |
 | [✦ Tensaku 添削](https://nikhil-thomas-a.github.io/tensaku-web/) | 13 free AI writing tools — grammar check, enhance, summarise, translate, and more | [Live ↗](https://nikhil-thomas-a.github.io/tensaku-web/) |
 | [⚙️ Startup Ops Toolkit](https://nikhil-thomas-a.github.io/startup-ops-toolkit/) | Google Sheets + Apps Script automations for early-stage startup ops | [Live ↗](https://nikhil-thomas-a.github.io/startup-ops-toolkit/) |

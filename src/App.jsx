@@ -32,12 +32,12 @@ const TOOLS = [
     title:"SoleHunt",
     desc:"Find your perfect shoe match. 9 biomechanics signals scored across 67 shoes in 14 categories — quiz, catalogue, and compare. Built with Next.js + TypeScript.",
     stats:[{n:"67",l:"Shoes"},{n:"9",l:"Fit signals"},{n:"14",l:"Categories"}],
-    url:"https://solesearch-one.vercel.app/",
+    url:"https://solehunt-one.vercel.app/",
     cta:"Try it live",
     colorKey:"green",
     dimD:"rgba(46,171,104,0.1)", dimL:"rgba(22,96,56,0.07)",
     borD:"rgba(46,171,104,0.25)", borL:"rgba(22,96,56,0.18)",
-    githubUrl:"https://github.com/nikhil-thomas-a/solesearch",
+    githubUrl:"https://github.com/nikhil-thomas-a/solehunt",
   },
   {
     id:"apply-radar", emoji:"🎯", tag:"Chrome Extension",
@@ -429,7 +429,7 @@ export default function Portfolio() {
             <div style={{flex:"1 1 160px",minWidth:140}}>
               <div style={{fontFamily:T.mono,fontSize:10,fontWeight:700,color:T.gold,letterSpacing:"0.14em",textTransform:"uppercase",marginBottom:14}}>Work</div>
               {[
-                {label:"SoleHunt",         href:"https://solesearch-one.vercel.app/"},
+                {label:"SoleHunt",         href:"https://solehunt-one.vercel.app/"},
                 {label:"Apply Radar",      href:"https://github.com/nikhil-thomas-a/apply-radar"},
                 {label:"Tensaku 添削",      href:"https://nikhil-thomas-a.github.io/tensaku-web/"},
                 {label:"Startup Ops Toolkit", href:"https://nikhil-thomas-a.github.io/startup-ops-toolkit/"},

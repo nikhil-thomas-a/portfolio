@@ -37,7 +37,6 @@ const TOOLS = [
     colorKey:"green",
     dimD:"rgba(46,171,104,0.1)", dimL:"rgba(22,96,56,0.07)",
     borD:"rgba(46,171,104,0.25)", borL:"rgba(22,96,56,0.18)",
-    githubUrl:"https://github.com/nikhil-thomas-a/solehunt",
   },
   {
     id:"apply-radar", emoji:"🎯", tag:"Chrome Extension",
@@ -109,7 +108,6 @@ const DATA_PROJECTS = [
     colorKey:"red",
     dimD:"rgba(229,72,77,0.1)", dimL:"rgba(200,40,43,0.07)",
     borD:"rgba(229,72,77,0.25)", borL:"rgba(200,40,43,0.18)",
-    githubUrl:"https://github.com/nikhil-thomas-a/data-portfolio",
   },
   {
     id:"ai-training-playbook", emoji:"📖", tag:"Reference Guide",

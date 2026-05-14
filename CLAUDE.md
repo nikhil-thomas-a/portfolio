@@ -6,12 +6,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ```bash
 npm install        # install dependencies (first time or after pulling)
-npm run dev        # dev server → http://localhost:5173/portfolio/
+npm run dev        # dev server → http://localhost:5173/
 npm run build      # production build → dist/
 npm run preview    # preview the production build locally
 ```
 
-Pushing to `main` auto-deploys to GitHub Pages via `.github/workflows/deploy.yml`. No manual deploy step needed.
+Pushing to `main` triggers two deployments:
+- **Vercel** (primary) — auto-deploys to `https://nikhilthomasa.in` via Vercel's GitHub integration
+- **GitHub Pages** (secondary) — auto-deploys via `.github/workflows/deploy.yml`
 
 ## Architecture
 
@@ -49,7 +51,7 @@ const DARK  = { bg, surface, card, border, borderHi, gold, goldDim, goldBorder, 
 const LIGHT = { ... isDark:false }
 ```
 
-All styling uses these tokens via the `T` variable passed through props. There are no CSS classes — every element uses inline `style={{}}` objects referencing `T.*`.
+All styling uses these tokens via the `T` variable passed through props. Two CSS classes are used for mobile overrides (`portfolio-card`, `hero-photo`) defined in the inline `<style>` tag inside the Portfolio component.
 
 Color values for the three `colorKey` options (copy-paste when adding a project):
 - **red** — `dimD:"rgba(229,72,77,0.1)"`, `dimL:"rgba(200,40,43,0.07)"`, `borD:"rgba(229,72,77,0.25)"`, `borL:"rgba(200,40,43,0.18)"`
@@ -58,10 +60,20 @@ Color values for the three `colorKey` options (copy-paste when adding a project)
 
 ### Photo
 
-The profile photo is a base64-encoded JPEG stored as `const PHOTO` in `App.jsx`. This makes the file very large (~160k tokens). Always use `offset`/`limit` when reading the file — the data arrays are in the first ~120 lines, and the render/component code starts around line ~112.
+The profile photo is served as a static file at `public/photo.jpg` and referenced via `const PHOTO = '/photo.jpg'` in `App.jsx`. Vite copies everything in `public/` to `dist/` at build time.
+
+### Animations
+
+`useInView(delay)` — IntersectionObserver hook that returns `[ref, visible, animStyle]`. Attach `ref` to a wrapper div and spread `animStyle` on it for scroll-triggered fade+slide-up. Used in `ToolCard` and the CTA block.
+
+`useCountUp(target, active, duration)` — Counts a number up from 0 with ease-out cubic. Used via `<StatNum n={s.n} visible={visible}/>` inside `ToolCard` stats.
+
+### Dark mode
+
+Default respects `prefers-color-scheme`. Preference is persisted to `localStorage` under the key `portfolio-theme`. Toggle is in the nav bar.
 
 ### Live URL
 
-`https://nikhil-thomas-a.github.io/portfolio/`
+`https://nikhilthomasa.in`
 
-Note: Vite is configured with `base: '/portfolio/'` — all asset paths are relative to that subpath.
+Note: Vite uses the default `base: '/'` — no subpath configuration needed.

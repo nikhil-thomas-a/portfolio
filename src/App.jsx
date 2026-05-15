@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 
 // ── PHOTO ─────────────────────────────────────────────────────
-const PHOTO = '/photo.jpg';
+const PHOTO = `${import.meta.env.BASE_URL}photo.jpg`;
 
 // ── THEMES ────────────────────────────────────────────────────
 const DARK = {
